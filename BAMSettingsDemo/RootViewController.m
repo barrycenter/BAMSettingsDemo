@@ -3,142 +3,119 @@
 //  BAMSettingsDemo
 //
 //  Created by Barry Murphy on 4/13/11.
+//
+//  If you use this software in your project, a credit for Barry Murphy
+//  and a link to http://barrycenter.com would be appreciated.
+//
+//  --------------------------------
+//  Simplified BSD License (FreeBSD)
+//  --------------------------------
+//
 //  Copyright 2011 Barry Murphy. All rights reserved.
+//
+//  Redistribution and use in source and binary forms, with or without modification, are
+//  permitted provided that the following conditions are met:
+//
+//  1. Redistributions of source code must retain the above copyright notice, this list of
+//     conditions and the following disclaimer.
+//
+//  2. Redistributions in binary form must reproduce the above copyright notice, this list
+//     of conditions and the following disclaimer in the documentation and/or other materials
+//     provided with the distribution.
+//
+//  THIS SOFTWARE IS PROVIDED BY BARRY MURPHY "AS IS" AND ANY EXPRESS OR IMPLIED
+//  WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+//  FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL BARRY MURPHY OR
+//  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+//  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+//  SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+//  ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+//  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+//  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+//
+//  The views and conclusions contained in the software and documentation are those of the
+//  authors and should not be interpreted as representing official policies, either expressed
+//  or implied, of Barry Murphy.
 //
 
 #import "RootViewController.h"
+#import "BAMSettingsViewController.h"
 
 @implementation RootViewController
+@synthesize launchButton;
 
-- (void)viewDidLoad
-{
+
+/******************************************************************************\
+ *                                                                            *
+ *                            IMPLEMENTATION NOTE                             *
+ *                                                                            *
+ *  To implement the BAMSettingsViewController in your app, you only need to  *
+ *  push it onto an existing navigationController within your app. Learn how  *
+ *  to do this by looking at the buttonPressed: method below. That's all you  *
+ *  need to be do to use this. The delegate methods are optional.             *
+ *                                                                            *
+\******************************************************************************/
+
+
+- (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // Setting the title used by the navigationBar of the current page.
+    self.title = @"BAMSettings Demo";
+    
+    // But I want a different title on the back button.
+    self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Launch Screen" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
+    // Okay, I'm a control freak and want a different color navigationBar even in a demo app.
+    //self.navigationController.navigationBar.tintColor = [UIColor darkGrayColor];
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.25f green:0.25f blue:0.25f alpha:1.0f];
     [super viewWillAppear:animated];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
-/*
- // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	// Return YES for supported orientations.
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
- */
-
-// Customize the number of sections in the table view.
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 0;
-}
-
-// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-
-    // Configure the cell.
-    return cell;
-}
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete)
-    {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }
-    else if (editingStyle == UITableViewCellEditingStyleInsert)
-    {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-	*/
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Relinquish ownership any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload
-{
+- (void)viewDidUnload {
+    [self setLaunchButton:nil];
     [super viewDidUnload];
 
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
+    [launchButton release];
     [super dealloc];
+}
+
+#pragma mark - IBAction Methods
+
+- (IBAction)buttonPressed:(id)sender {
+    // Load the BAMSettingsViewController, set the delegate, push onto the controller and then release. That's all!
+    BAMSettingsViewController *settingsViewController = [[BAMSettingsViewController alloc] initWithTitle:@"Settings" propertyListNamed:@"Root"];
+    settingsViewController.delegate = self;
+    [self.navigationController pushViewController:settingsViewController animated:YES];
+    [settingsViewController release];
+    
+    // This removes my custom navigationBar color from before so the screen looks like Apple's settings app.
+    self.navigationController.navigationBar.tintColor = nil;
+}
+
+#pragma mark - BAMSettingsViewDelegate Methods
+
+- (void)settingsViewDone {
+    NSLog(@"BAMSettingsViewDelegate settingsViewDone fired");
+}
+
+- (void)settingsViewDidChangeValueForKey:(NSString *)key {
+    NSLog(@"BAMSettingsViewDelegate settingsViewDidChangeValueForKey:%@ fired", key);
+}
+
+- (void)settingsViewExitedWithChangedValues:(BOOL)didChange {
+    NSLog(@"BAMSettingsViewDelegate settingsViewExitedWithChangedValues:%@ fired", didChange ? @"Yes" : @"No");
+}
+
+- (void)settingsViewNavigatedAwayFromPane:(NSString *)propertyListName withChangedValues:(BOOL)didChange {
+    NSLog(@"BAMSettingsViewDelegate settingsViewNavigatedAwayFromPane:%@ withChangedValues:%@ fired", propertyListName, didChange ? @"Yes" : @"No");
 }
 
 @end

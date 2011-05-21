@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1189FE136FC57E0062E3F5 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1189F3136FC57E0062E3F5 /* Button.png */; };
+		4C1189FF136FC57E0062E3F5 /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1189F4136FC57E0062E3F5 /* Button@2x.png */; };
+		4C118A00136FC57E0062E3F5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1189F5136FC57E0062E3F5 /* Icon-72.png */; };
+		4C118A01136FC57E0062E3F5 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1189F6136FC57E0062E3F5 /* Icon-Small-50.png */; };
+		4C118A02136FC57E0062E3F5 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1189F7136FC57E0062E3F5 /* Icon-Small.png */; };
+		4C118A03136FC57E0062E3F5 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1189F8136FC57E0062E3F5 /* Icon-Small@2x.png */; };
+		4C118A04136FC57E0062E3F5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1189F9136FC57E0062E3F5 /* Icon.png */; };
+		4C118A05136FC57E0062E3F5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1189FA136FC57E0062E3F5 /* Icon@2x.png */; };
+		4C118A06136FC57E0062E3F5 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1189FB136FC57E0062E3F5 /* iTunesArtwork.png */; };
+		4C118A7213862A150062E3F5 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C118A7113862A150062E3F5 /* Settings.bundle */; };
+		4C118A75138642AD0062E3F5 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C118A73138642AD0062E3F5 /* circle.png */; };
+		4C118A76138642AD0062E3F5 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C118A74138642AD0062E3F5 /* square.png */; };
+		4C118A7B138798AA0062E3F5 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C118A77138798AA0062E3F5 /* Background.png */; };
+		4C118A7C138798AA0062E3F5 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C118A78138798AA0062E3F5 /* Background@2x.png */; };
+		4C118A7D138798AA0062E3F5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C118A79138798AA0062E3F5 /* Default.png */; };
+		4C118A7E138798AA0062E3F5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C118A7A138798AA0062E3F5 /* Default@2x.png */; };
 		4C667C4C13564B2600137A81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C667C4B13564B2600137A81 /* UIKit.framework */; };
 		4C667C4E13564B2600137A81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C667C4D13564B2600137A81 /* Foundation.framework */; };
 		4C667C5013564B2600137A81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C667C4F13564B2600137A81 /* CoreGraphics.framework */; };
@@ -22,6 +38,7 @@
 		4C667C7613564B2600137A81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C667C7413564B2600137A81 /* InfoPlist.strings */; };
 		4C667C7913564B2600137A81 /* BAMSettingsDemoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C667C7813564B2600137A81 /* BAMSettingsDemoTests.h */; };
 		4C667C7B13564B2600137A81 /* BAMSettingsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C667C7A13564B2600137A81 /* BAMSettingsDemoTests.m */; };
+		4C667C8D13564BAB00137A81 /* BAMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C667C8C13564BAB00137A81 /* BAMSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,26 +52,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C1189F3136FC57E0062E3F5 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		4C1189F4136FC57E0062E3F5 /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		4C1189F5136FC57E0062E3F5 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		4C1189F6136FC57E0062E3F5 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		4C1189F7136FC57E0062E3F5 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		4C1189F8136FC57E0062E3F5 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		4C1189F9136FC57E0062E3F5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4C1189FA136FC57E0062E3F5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		4C1189FB136FC57E0062E3F5 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		4C118A7113862A150062E3F5 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		4C118A73138642AD0062E3F5 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		4C118A74138642AD0062E3F5 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+		4C118A77138798AA0062E3F5 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		4C118A78138798AA0062E3F5 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		4C118A79138798AA0062E3F5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4C118A7A138798AA0062E3F5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4C667C4713564B2600137A81 /* BAMSettingsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAMSettingsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C667C4B13564B2600137A81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C667C4D13564B2600137A81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C667C4F13564B2600137A81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4C667C5313564B2600137A81 /* BAMSettingsDemo-Info.plist */ = {isa = PBXFileReference; path = "BAMSettingsDemo-Info.plist"; sourceTree = "<group>"; };
+		4C667C5313564B2600137A81 /* BAMSettingsDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BAMSettingsDemo-Info.plist"; sourceTree = "<group>"; };
 		4C667C5513564B2600137A81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C667C5713564B2600137A81 /* BAMSettingsDemo-Prefix.pch */ = {isa = PBXFileReference; path = "BAMSettingsDemo-Prefix.pch"; sourceTree = "<group>"; };
+		4C667C5713564B2600137A81 /* BAMSettingsDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BAMSettingsDemo-Prefix.pch"; sourceTree = "<group>"; };
 		4C667C5813564B2600137A81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C667C5A13564B2600137A81 /* BAMSettingsDemoAppDelegate.h */ = {isa = PBXFileReference; path = BAMSettingsDemoAppDelegate.h; sourceTree = "<group>"; };
+		4C667C5A13564B2600137A81 /* BAMSettingsDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAMSettingsDemoAppDelegate.h; sourceTree = "<group>"; };
 		4C667C5B13564B2600137A81 /* BAMSettingsDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAMSettingsDemoAppDelegate.m; sourceTree = "<group>"; };
 		4C667C5E13564B2600137A81 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		4C667C6013564B2600137A81 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		4C667C6013564B2600137A81 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		4C667C6113564B2600137A81 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4C667C6413564B2600137A81 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		4C667C6B13564B2600137A81 /* BAMSettingsDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BAMSettingsDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C667C7313564B2600137A81 /* BAMSettingsDemoTests-Info.plist */ = {isa = PBXFileReference; path = "BAMSettingsDemoTests-Info.plist"; sourceTree = "<group>"; };
+		4C667C7313564B2600137A81 /* BAMSettingsDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BAMSettingsDemoTests-Info.plist"; sourceTree = "<group>"; };
 		4C667C7513564B2600137A81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C667C7713564B2600137A81 /* BAMSettingsDemoTests-Prefix.pch */ = {isa = PBXFileReference; path = "BAMSettingsDemoTests-Prefix.pch"; sourceTree = "<group>"; };
+		4C667C7713564B2600137A81 /* BAMSettingsDemoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BAMSettingsDemoTests-Prefix.pch"; sourceTree = "<group>"; };
 		4C667C7813564B2600137A81 /* BAMSettingsDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAMSettingsDemoTests.h; sourceTree = "<group>"; };
 		4C667C7A13564B2600137A81 /* BAMSettingsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAMSettingsDemoTests.m; sourceTree = "<group>"; };
+		4C667C8B13564BAB00137A81 /* BAMSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAMSettingsViewController.h; sourceTree = "<group>"; };
+		4C667C8C13564BAB00137A81 /* BAMSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAMSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +154,8 @@
 				4C667C6013564B2600137A81 /* RootViewController.h */,
 				4C667C6113564B2600137A81 /* RootViewController.m */,
 				4C667C6313564B2600137A81 /* RootViewController.xib */,
+				4C667C8B13564BAB00137A81 /* BAMSettingsViewController.h */,
+				4C667C8C13564BAB00137A81 /* BAMSettingsViewController.m */,
 				4C667C5213564B2600137A81 /* Supporting Files */,
 			);
 			path = BAMSettingsDemo;
@@ -130,7 +167,23 @@
 				4C667C5313564B2600137A81 /* BAMSettingsDemo-Info.plist */,
 				4C667C5413564B2600137A81 /* InfoPlist.strings */,
 				4C667C5713564B2600137A81 /* BAMSettingsDemo-Prefix.pch */,
+				4C118A7113862A150062E3F5 /* Settings.bundle */,
 				4C667C5813564B2600137A81 /* main.m */,
+				4C118A77138798AA0062E3F5 /* Background.png */,
+				4C118A78138798AA0062E3F5 /* Background@2x.png */,
+				4C118A79138798AA0062E3F5 /* Default.png */,
+				4C118A7A138798AA0062E3F5 /* Default@2x.png */,
+				4C1189F3136FC57E0062E3F5 /* Button.png */,
+				4C1189F4136FC57E0062E3F5 /* Button@2x.png */,
+				4C1189F5136FC57E0062E3F5 /* Icon-72.png */,
+				4C1189F6136FC57E0062E3F5 /* Icon-Small-50.png */,
+				4C1189F7136FC57E0062E3F5 /* Icon-Small.png */,
+				4C1189F8136FC57E0062E3F5 /* Icon-Small@2x.png */,
+				4C1189F9136FC57E0062E3F5 /* Icon.png */,
+				4C1189FA136FC57E0062E3F5 /* Icon@2x.png */,
+				4C1189FB136FC57E0062E3F5 /* iTunesArtwork.png */,
+				4C118A73138642AD0062E3F5 /* circle.png */,
+				4C118A74138642AD0062E3F5 /* square.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,6 +281,22 @@
 				4C667C5613564B2600137A81 /* InfoPlist.strings in Resources */,
 				4C667C5F13564B2600137A81 /* MainWindow.xib in Resources */,
 				4C667C6513564B2600137A81 /* RootViewController.xib in Resources */,
+				4C1189FE136FC57E0062E3F5 /* Button.png in Resources */,
+				4C1189FF136FC57E0062E3F5 /* Button@2x.png in Resources */,
+				4C118A00136FC57E0062E3F5 /* Icon-72.png in Resources */,
+				4C118A01136FC57E0062E3F5 /* Icon-Small-50.png in Resources */,
+				4C118A02136FC57E0062E3F5 /* Icon-Small.png in Resources */,
+				4C118A03136FC57E0062E3F5 /* Icon-Small@2x.png in Resources */,
+				4C118A04136FC57E0062E3F5 /* Icon.png in Resources */,
+				4C118A05136FC57E0062E3F5 /* Icon@2x.png in Resources */,
+				4C118A06136FC57E0062E3F5 /* iTunesArtwork.png in Resources */,
+				4C118A7213862A150062E3F5 /* Settings.bundle in Resources */,
+				4C118A75138642AD0062E3F5 /* circle.png in Resources */,
+				4C118A76138642AD0062E3F5 /* square.png in Resources */,
+				4C118A7B138798AA0062E3F5 /* Background.png in Resources */,
+				4C118A7C138798AA0062E3F5 /* Background@2x.png in Resources */,
+				4C118A7D138798AA0062E3F5 /* Default.png in Resources */,
+				4C118A7E138798AA0062E3F5 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +335,7 @@
 				4C667C5913564B2600137A81 /* main.m in Sources */,
 				4C667C5C13564B2600137A81 /* BAMSettingsDemoAppDelegate.m in Sources */,
 				4C667C6213564B2600137A81 /* RootViewController.m in Sources */,
+				4C667C8D13564BAB00137A81 /* BAMSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +434,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BAMSettingsDemo/BAMSettingsDemo-Prefix.pch";
 				INFOPLIST_FILE = "BAMSettingsDemo/BAMSettingsDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -377,6 +448,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BAMSettingsDemo/BAMSettingsDemo-Prefix.pch";
 				INFOPLIST_FILE = "BAMSettingsDemo/BAMSettingsDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -446,6 +518,7 @@
 				4C667C8013564B2600137A81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C667C8113564B2600137A81 /* Build configuration list for PBXNativeTarget "BAMSettingsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +527,7 @@
 				4C667C8313564B2600137A81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
