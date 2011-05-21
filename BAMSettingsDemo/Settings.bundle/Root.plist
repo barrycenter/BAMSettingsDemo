@@ -107,24 +107,6 @@
 			<string>PSSliderSpecifier</string>
 		</dict>
 		<dict>
-			<key>AutocapitalizationType</key>
-			<string>None</string>
-			<key>AutocorrectionType</key>
-			<string>No</string>
-			<key>DefaultValue</key>
-			<string></string>
-			<key>IsSecure</key>
-			<false/>
-			<key>Key</key>
-			<string>TypeSomething2</string>
-			<key>KeyboardType</key>
-			<string>Alphabet</string>
-			<key>Title</key>
-			<string>Type Something 2</string>
-			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
-		</dict>
-		<dict>
 			<key>Type</key>
 			<string>PSChildPaneSpecifier</string>
 			<key>File</key>

@@ -39,9 +39,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BAMSettingsViewController.h"
+#import "BAMSettings.h"
 
-@interface RootViewController : UIViewController <BAMSettingsViewDelegate>{
+@interface RootViewController : UIViewController <BAMSettingsDelegate>{
     UIButton *launchButton;
 }
 @property (nonatomic, retain) IBOutlet UIButton *launchButton;

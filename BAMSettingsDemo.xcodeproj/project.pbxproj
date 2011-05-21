@@ -38,7 +38,7 @@
 		4C667C7613564B2600137A81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C667C7413564B2600137A81 /* InfoPlist.strings */; };
 		4C667C7913564B2600137A81 /* BAMSettingsDemoTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C667C7813564B2600137A81 /* BAMSettingsDemoTests.h */; };
 		4C667C7B13564B2600137A81 /* BAMSettingsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C667C7A13564B2600137A81 /* BAMSettingsDemoTests.m */; };
-		4C667C8D13564BAB00137A81 /* BAMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C667C8C13564BAB00137A81 /* BAMSettingsViewController.m */; };
+		4C667C8D13564BAB00137A81 /* BAMSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C667C8C13564BAB00137A81 /* BAMSettings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +88,8 @@
 		4C667C7713564B2600137A81 /* BAMSettingsDemoTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BAMSettingsDemoTests-Prefix.pch"; sourceTree = "<group>"; };
 		4C667C7813564B2600137A81 /* BAMSettingsDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAMSettingsDemoTests.h; sourceTree = "<group>"; };
 		4C667C7A13564B2600137A81 /* BAMSettingsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAMSettingsDemoTests.m; sourceTree = "<group>"; };
-		4C667C8B13564BAB00137A81 /* BAMSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAMSettingsViewController.h; sourceTree = "<group>"; };
-		4C667C8C13564BAB00137A81 /* BAMSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAMSettingsViewController.m; sourceTree = "<group>"; };
+		4C667C8B13564BAB00137A81 /* BAMSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAMSettings.h; sourceTree = "<group>"; };
+		4C667C8C13564BAB00137A81 /* BAMSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAMSettings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +154,8 @@
 				4C667C6013564B2600137A81 /* RootViewController.h */,
 				4C667C6113564B2600137A81 /* RootViewController.m */,
 				4C667C6313564B2600137A81 /* RootViewController.xib */,
-				4C667C8B13564BAB00137A81 /* BAMSettingsViewController.h */,
-				4C667C8C13564BAB00137A81 /* BAMSettingsViewController.m */,
+				4C667C8B13564BAB00137A81 /* BAMSettings.h */,
+				4C667C8C13564BAB00137A81 /* BAMSettings.m */,
 				4C667C5213564B2600137A81 /* Supporting Files */,
 			);
 			path = BAMSettingsDemo;
@@ -335,7 +335,7 @@
 				4C667C5913564B2600137A81 /* main.m in Sources */,
 				4C667C5C13564B2600137A81 /* BAMSettingsDemoAppDelegate.m in Sources */,
 				4C667C6213564B2600137A81 /* RootViewController.m in Sources */,
-				4C667C8D13564BAB00137A81 /* BAMSettingsViewController.m in Sources */,
+				4C667C8D13564BAB00137A81 /* BAMSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

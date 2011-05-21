@@ -39,22 +39,22 @@
 //
 
 #import "RootViewController.h"
-#import "BAMSettingsViewController.h"
+#import "BAMSettings.h"
 
 @implementation RootViewController
 @synthesize launchButton;
 
 
-/******************************************************************************\
- *                                                                            *
- *                            IMPLEMENTATION NOTE                             *
- *                                                                            *
- *  To implement the BAMSettingsViewController in your app, you only need to  *
- *  push it onto an existing navigationController within your app. Learn how  *
- *  to do this by looking at the buttonPressed: method below. That's all you  *
- *  need to be do to use this. The delegate methods are optional.             *
- *                                                                            *
-\******************************************************************************/
+/*****************************************************************************\
+ *                                                                           *
+ *                            IMPLEMENTATION NOTE                            *
+ *                                                                           *
+ *  To implement the BAMSettings in your app, you only need to push it onto  *
+ *  an existing navigation controller within your app. Learn how to do this  *
+ *  by looking at the buttonPressed: method below. That's everything you'll  *
+ *  need to do to use this. The delegate methods are completely optional.    *
+ *                                                                           *
+\*****************************************************************************/
 
 
 - (void)viewDidLoad {
@@ -90,32 +90,28 @@
 #pragma mark - IBAction Methods
 
 - (IBAction)buttonPressed:(id)sender {
-    // Load the BAMSettingsViewController, set the delegate, push onto the controller and then release. That's all!
-    BAMSettingsViewController *settingsViewController = [[BAMSettingsViewController alloc] initWithTitle:@"Settings" propertyListNamed:@"Root"];
-    settingsViewController.delegate = self;
-    [self.navigationController pushViewController:settingsViewController animated:YES];
-    [settingsViewController release];
+    // Load the BAMSettings, set the delegate, push onto the controller and then release. That's all!
+    BAMSettings *settings = [[BAMSettings alloc] initWithTitle:@"Settings" propertyListNamed:@"Root"];
+    settings.delegate = self;
+    [self.navigationController pushViewController:settings animated:YES];
+    [settings release];
     
     // This removes my custom navigationBar color from before so the screen looks like Apple's settings app.
     self.navigationController.navigationBar.tintColor = nil;
 }
 
-#pragma mark - BAMSettingsViewDelegate Methods
+#pragma mark - BAMSettingsDelegate Methods
 
-- (void)settingsViewDone {
-    NSLog(@"BAMSettingsViewDelegate settingsViewDone fired");
+- (void)settingsDidChangeValueForKey:(NSString *)key {
+    NSLog(@"BAMSettingsDelegate settingsViewDidChangeValueForKey:%@ fired", key);
 }
 
-- (void)settingsViewDidChangeValueForKey:(NSString *)key {
-    NSLog(@"BAMSettingsViewDelegate settingsViewDidChangeValueForKey:%@ fired", key);
+- (void)settingsExitedWithChangedValues:(BOOL)didChange {
+    NSLog(@"BAMSettingsDelegate settingsViewExitedWithChangedValues:%@ fired", didChange ? @"Yes" : @"No");
 }
 
-- (void)settingsViewExitedWithChangedValues:(BOOL)didChange {
-    NSLog(@"BAMSettingsViewDelegate settingsViewExitedWithChangedValues:%@ fired", didChange ? @"Yes" : @"No");
-}
-
-- (void)settingsViewNavigatedAwayFromPane:(NSString *)propertyListName withChangedValues:(BOOL)didChange {
-    NSLog(@"BAMSettingsViewDelegate settingsViewNavigatedAwayFromPane:%@ withChangedValues:%@ fired", propertyListName, didChange ? @"Yes" : @"No");
+- (void)settingsNavigatedAwayFromPane:(NSString *)propertyListName withChangedValues:(BOOL)didChange {
+    NSLog(@"BAMSettingsDelegate settingsViewNavigatedAwayFromPane:%@ withChangedValues:%@ fired", propertyListName, didChange ? @"Yes" : @"No");
 }
 
 @end
