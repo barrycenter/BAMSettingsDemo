@@ -253,6 +253,7 @@
 		4C667C3E13564B2600137A81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = "Barry Murphy";
 			};
 			buildConfigurationList = 4C667C4113564B2600137A81 /* Build configuration list for PBXProject "BAMSettingsDemo" */;
@@ -433,6 +434,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BAMSettingsDemo/BAMSettingsDemo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BAMSettingsDemo/BAMSettingsDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +449,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BAMSettingsDemo/BAMSettingsDemo-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BAMSettingsDemo/BAMSettingsDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -466,6 +469,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BAMSettingsDemoTests/BAMSettingsDemoTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BAMSettingsDemoTests/BAMSettingsDemoTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -488,6 +492,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BAMSettingsDemoTests/BAMSettingsDemoTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BAMSettingsDemoTests/BAMSettingsDemoTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
